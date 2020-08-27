@@ -1,3 +1,43 @@
-body{
-    background-color: black;
+*{
+    margin: 0;
+    padding: 0;
+}
+.name{
+    font-weight: bolder;
+    font-size: 33px;
+    color: #3C5E9B;
+}
+.prof{
+    font-weight: bold ;
+    font-size: 19 px;
+    color: #3C5E9B;
+}
+#DP{
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 40px;
+    padding: 10px;
+    background-color:#BDDEEF ;
+}
+.blade{
+    background-color:#5D86B4 ;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.m-10{
+    margin: 150px;
+    text-align: center;
+}
+.sdiv{
+    background-color:#5D86B4;
+    height: 175px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    z-index: -1;
 }
