@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.mt-6{
+    margin-top: 100px;
+}
+.cont{
+    
+    text-align: center;
+
+}
+.cont button{
+    color: white;
+}
+.cont img{
+    margin-top: 50px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1{
+    color: white;
+}
+
+#logo img{
+    float: left;
+    margin: 5px 0px 0px 20px;
+    width: 100px;
+    height: 35px;
+}
+.banner{
+    background-image:linear-gradient(rgba(100, 100, 100, 0.6),rgba(100, 100, 100, 0.6)), url(background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+ul{
+    list-style-type: none;
+    margin-right: 7px;
+}
+
+ul li{
+    display:inline-block ;
+    margin-top: 15px;
+}
+ul li a{
+    color:white;
+    font-weight: 500;
+    padding: 5px 20px;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.social-media{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media ul{
+    list-style: none;
+  }
+  
+  .social-media ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 25px 15px;
+  }
+  
+  .social-media img{
+    width: 40px;
+    height: 40px;
+  }
+
+/*---------- 6. About area css starts---------------*/
+
+.stack {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.stack img {
+    background: #fff;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px;
+    width: 100%;
+    -moz-box-shadow:    1px 1px 2px rgba(0,0,0,.25);
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    box-shadow:         1px 1px 2px rgba(0,0,0,.25);
+}
+
+.stack::before {
+    background: #969696;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+}
+
+.btn-a {
+    animation-delay: 2s;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 18px;
+    padding: 14px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-animation-delay: 2s;
+    -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
+    animation-delay: 2s;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.skill-btn {
+    background: #00b0dc;
+    border: 1px solid #00b0dc;
+    color: #fff;
+}
+
+.down-btn {
+    background: none;
+    color: #2B2F37;
+    border: 1px solid #00b0dc;
+}
+
+.about-text-left {
+    margin-top: 90px;
+}
+
+#about{
+    height: 100vh;
+}
+
+.about-text-left p {
+    text-align: right;
+    font-size: 15px;
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+
+.about-right h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.about-text-right h3 {
+    color: #fafafa;
+    margin-bottom: 45px;
+}
+
+.about-text-right h6 {
+    color: #333333;
+}
+
+.about-right p span {
+    color: #262626;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-list{
+    list-style: none;
+}
+
+.about-right .about-list li {
+    margin-bottom: 10px;
+}
+.about-right .about-list li .title {
+    position: relative;
+    margin-right: 10px;
+    padding-bottom: 1px;
+    color: #a1a1a1;
+    font-weight: 700;
+}
+.about-right .about-list li .title:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #e1e1e1;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.about-right .about-list li .title:after {
+    position: absolute;
+    content: ':';
+    right: -8px;
+}
+.about-right .about-list li .value {
+    position: relative;
+}
+.about-right .about-list li .value:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/*-------About area css ends--------------*/
+
+.skills-area .section-title h2{
+    color: #fff;
+}
+
+.skills-area{
+    position: relative;
+    background-image: url(../images/skills/1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.skills-area:before{
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.skillbar {
+    margin-bottom: 24px;
+    position: relative;
+    width: 100%;
+    display: block
+}
+
+.skillbar .skillbar-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #fff;
+}
+
+.skillbar .skillbar-percent {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.skillbar-bar {
+    background-color: #fff;
+    width: 100%;
+    height: 15px;
+    border-radius: 40px;
+}
+
+.skillbar-bar .skillbar-child {
+    width: 0;
+    height: 100%;
+    background-color: #00B0DC;
+    -webkit-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    border-radius: 5px;
+}
+
+/*--------- 10. Statistic area starts -----------*/
+
+.statistic-area{
+    background-image: url(../images/statistic/stats.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color:#fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.statistic-area:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: -1;
+}
+
+.statistic-area .item{
+    margin-bottom: 30px;
+}
+
+.statistic-area .item .fa{
+    color: #fff;
+    font-size: 40px;
+}
+
+.statistic-area .item p{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.statistic-area .item h2 {
+    color: #00B0DC;
+    font-weight: 800;
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+/*----------------Statistic area ends-------------------*/
