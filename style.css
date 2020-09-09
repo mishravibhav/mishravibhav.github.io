@@ -53,6 +53,7 @@ ul li a{
     transition: 0.6s ease;
 }
 
+
 ul li a:hover{
     text-decoration: none;
     background-color: red;
@@ -264,3 +265,15 @@ ul li a:hover{
 }
 
 /*----------------Statistic area ends-------------------*/
+.footer-area {
+    background: #171717;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.footer-area a{
+    color: #00B0DC;
+}
+.footer-area a:hover{
+    color:red;
+    text-decoration: none;
+}
