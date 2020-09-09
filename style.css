@@ -101,61 +101,6 @@ ul li a:hover{
     box-shadow:         1px 1px 2px rgba(0,0,0,.25);
 }
 
-.stack::before {
-    background: #969696;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -10;
-    -webkit-transform: rotate(-6deg);
-    -moz-transform: rotate(-6deg);
-    -ms-transform: rotate(-6deg);
-    -o-transform: rotate(-6deg);
-    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-}
-
-.btn-a {
-    animation-delay: 2s;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 18px;
-    padding: 14px 22px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-animation-delay: 2s;
-    -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
-    animation-delay: 2s;
-    transition: background .3s ease-in-out, color .3s ease-in-out;
-    white-space: nowrap;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    margin-top: 20px;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-.skill-btn {
-    background: #00b0dc;
-    border: 1px solid #00b0dc;
-    color: #fff;
-}
-
-.down-btn {
-    background: none;
-    color: #2B2F37;
-    border: 1px solid #00b0dc;
-}
-
 .about-text-left {
     margin-top: 90px;
 }
@@ -275,13 +220,6 @@ ul li a:hover{
     color: #fff;
 }
 
-.skillbar .skillbar-percent {
-    float: right;
-    display: inline-block;
-    vertical-align: middle;
-    color: #fff;
-}
-
 .skillbar-bar {
     background-color: #fff;
     width: 100%;
@@ -301,40 +239,18 @@ ul li a:hover{
 
 /*--------- 10. Statistic area starts -----------*/
 
-.statistic-area{
-    background-image: url(../images/statistic/stats.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    color:#fff;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.statistic-area:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.9);
-    z-index: -1;
-}
-
 .statistic-area .item{
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .statistic-area .item .fa{
-    color: #fff;
+    color: rgb(8, 8, 8);
     font-size: 40px;
 }
 
 .statistic-area .item p{
-    color: #fff;
+    color: rgb(14, 13, 13);
     margin-top: 10px;
     font-size: 20px;
     font-weight: 300;
