@@ -60,6 +60,13 @@ ul li a:hover{
     color: white;
     border-radius: 5px;
 }
+
+ul li.active a{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
 .social-media{
     width: 100%;
     text-align: center;
