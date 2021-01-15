@@ -286,7 +286,11 @@ ul li.active a{
     padding-left: 10px;
     width: 100px;
     margin-left: 10px;
+    margin-bottom: 10px;
     height: 150px;  
+  }
+  #Skill-card p{
+    font-weight: bold;
   }
 
 /*--------- 10. Statistic area starts -----------*/
