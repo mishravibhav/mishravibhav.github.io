@@ -1,0 +1,70 @@
+#bg {
+  background-image: url("https://image.shutterstock.com/image-photo/accounting-report-spreadsheet-business-women-600w-1056258833.jpg");
+  background-color: #cccccc;
+  background-size: 100%;
+ }
+/* Margins start */
+
+.mt-6{
+  margin-top: 8%;
+}
+
+.mt-dash{
+  margin-top: 6%;
+}
+
+.m-l-r-1{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+/* Margins End */
+
+/* Paddings Start */
+
+/* Paddings End */
+
+
+/*  */
+
+
+/* SignIn Signup page start*/
+#logo a{
+  text-decoration: none;
+  color: white;
+  font-weight: 100px;
+  font-size: 20px;
+}
+nav button{ border: 0px;
+   border-radius: 5px;
+   padding: 5px;
+   color: white; 
+   background-color: red;
+    }
+
+/* #Signupdisplay{
+  color:red ;
+  padding: 10px;
+} */
+
+/* SignIn Signup page start*/
+
+/* dashboard */
+
+#Transaction_header{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 20% 20% 20% 40% ;
+}
+#Transaction_header div{
+  border: 1px solid gray;
+}
+#Transaction_details{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 20% 20% 20% 40% ;
+}
+#Transaction_details div{
+  border: 1px solid gray;
+}
