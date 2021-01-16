@@ -292,6 +292,12 @@ ul li.active a{
   #Skill-card p{
     font-weight: bold;
   }
+  #techKnown{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    }
 
 /*--------- 10. Statistic area starts -----------*/
 
