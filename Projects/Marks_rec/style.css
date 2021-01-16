@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.grid-box1 {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px   ;
+    grid-gap: 2px;
+    margin-left: 10px;
+}
+
+.grid-box1>div {
+    border: 1px solid black;
+    margin-left: 7px;
+}
+p{
+    color: cadetblue;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight:bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#results_header{
+    font-size: 20px;
+    padding: 3px;
+    margin-top: 10px;
+    margin-left: 15px;
+    float: left;
+    background-color: darkturquoise;
+    color: white;
+    text-decoration: unset;
+    font-weight: unset;
+    font-family: unset;
+}
+h2{
+    margin-left: 10px;
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: tomato;
+}
+body{
+    background-color: lightseagreen;
+}
+form{
+    height: 80%;
+    margin-top: 20px;
+    margin-left: 2%;
+
+}
+label,input{
+    margin-top: 7px;
+    margin-left: 25px;
+    
+}
+input{
+    padding: 12px;
+}
+.container{
+    height:500px;
+    width: 1200px;
+    background-color: white;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.form_body{
+    width: 43%;
+    margin-right: 5px;
+    height: 100%;
+    border: 1px dashed black;
+}
+
+#Results{
+    width: 55%;
+    margin-right: 5px;
+    height: 100%;
+    border: 1px dashed black;
+}
+.left{float: left;}
+.right{float: right;}
+.data_left{
+    float: left;
+}
+
+#standard{
+    height: 30px;
+    width: 200px;
+    margin-left: 20px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+}

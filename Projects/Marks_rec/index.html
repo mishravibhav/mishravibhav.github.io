@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Marks Recorder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--inside container left -->
+        <div class="form_body left">
+            <p> Student's Data Input</p>
+            <div id="form">
+                <h2>Student's Name</h2>
+                <label>
+                    <center> <input id="name" placeholder="Student's name"></center>
+                </label>
+                <h2>Standard</h2>
+                <center><select id="standard">
+                        <option value="--">Select An Option</option>
+                        <option value="Class 1">Class 1</option>
+                        <option value="Class 2">Class 2</option>
+                        <option value="Class 3">Class 3</option>
+                        <option value="Class 4">Class 4</option>
+                        <option value="Class 5">Class 5</option>
+                        <option value="Class 6">Class 6</option>
+                        <option value="Class 7">Class 7</option>
+                        <option value="Class 8">Class 8</option>
+                        <option value="Class 9">Class 9</option>
+                        <option value="Class 9">Class 10</option>
+                    </select></center>
+                <h2>Subject's Marks</h2>
+                <label>
+                    <input class="subject" id="phy" placeholder="Physics out of 100">
+                </label>
+                <label>
+                    <input class="subject" id="che" placeholder="Chemistry out of 100">
+                </label>
+                <label>
+                    <input class="subject" id="mat" placeholder="Mathematics out of 100">
+                </label>
+                <label>
+                    <input class="subject" id="sci" placeholder="Science out of 100">
+                </label>
+                <label>
+                    <input class="subject" id="ssci" placeholder="Social Science out of 100">
+                </label>
+                <br />
+                <center> <button type="submit" onclick="addStudent()" id="submit">SUBMIT</button> </center>
+
+            </div>
+        </div>
+
+
+        <!-- Student's Results -->
+        <div id="Results" class=" left">
+            <p> Student's Results</p>
+            <p id="results_header">Name</p>
+            <p id="results_header">Stan.</p>
+            <p id="results_header">Phy</p>
+            <p id="results_header">Chem</p>
+            <p id="results_header">Math</p>
+            <p id="results_header">Scie</p>
+            <p id="results_header">S.scie</p>
+            <p id="results_header">Total</p>
+            <p id="results_header">Avg</p>
+            <p id="results_header">Percent</p>
+
+            <div id="ShowData" class="grid-box1 left">
+                <div id="ShowName" class="data_left">
+
+                </div>
+                <div id="Stan" class="data_left">
+
+                </div>
+                <div id="Phys" class="data_left">
+
+                </div>
+                <div id="Chem" class="data_left">
+
+                </div>
+                <div id="Math" class="data_left">
+
+                </div>
+                <div id="Scie" class="data_left">
+
+                </div>
+                <div id="Sscie" class="data_left">
+
+                </div>
+                <div id="Tot" class="data_left">
+
+                </div>
+                <div id="Aver" class="data_left">
+
+                </div>
+                <div id="Perc" class="data_left">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
