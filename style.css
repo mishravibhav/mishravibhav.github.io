@@ -438,6 +438,7 @@ ul li.active a{
 
 .carousel .card:hover{
     transform: scale(1.05);
+    border-bottom: 2px solid red;
   }
 .owl-dots{
   text-align: center;
