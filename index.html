@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibhav's Portfolio</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
-    </link>
+    <link type="text/css" rel="stylesheet" href="style.css"></link>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Heebo&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 
 <body>
@@ -113,7 +114,8 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <ul class="about-list">
-                                    <li> <span class="title">Birthday</span> <span class="value">7th March 1999 </span> </li>
+                                    <li> <span class="title">Birthday</span> <span class="value">7th March 1999 </span>
+                                    </li>
                                     <li> <span class="title">Email</span> <span
                                             class="value">mishravibhav1910@gmail.com</span> </li>
                                 </ul>
@@ -237,9 +239,10 @@
 
                 <div>
                     <div id="Skill-card">
-                        <img style="height: 80px;" src="https://img.icons8.com/color/80/000000/adobe-photoshop.png" alt="">
+                        <img style="height: 80px;" src="https://img.icons8.com/color/80/000000/adobe-photoshop.png"
+                            alt="">
                         <p>Photoshop</p>
-                
+
                     </div>
                 </div>
 
@@ -257,14 +260,15 @@
         </h2>
     </div>
 
-    <div class="container">
+   
 
-        <!-- First Row -->
-        <div class="row py-5">
+    <!--  -->
+    <div class="wrapper">
+        <div class="carousel owl-carousel">
 
-            <!-- Expense Manager -->
+            <!-- Expence manager -->
 
-            <div class="col-lg-4 col-md-5 col-sm-8 text-center mb-5">
+            <div class="card ">
                 <img src="..\Images\Expense_manager.PNG" style="width: 100%;   " alt="Expense_Manager">
                 <div class="card-body">
                     <h5 class="card-title text-center">Expense Manager</h5>
@@ -283,9 +287,9 @@
                                 class="fas fa-video"></i> Watch Demo</button></a></div>
             </div>
 
-            <!-- Covid Tracker -->
+            <!-- Covid Cases -->
 
-            <div class="col-lg-4 col-md-5 col-sm-8 text-center mb-5">
+            <div class="card ">
                 <img src="..\Images\Covid_Tracker.PNG" style="width:100%;" alt="Covid_Tracker">
                 <div class="card-body">
                     <h5 class="card-title text-center">Covid Case Tracker</h5>
@@ -303,10 +307,9 @@
                                 class="fas fa-video"></i> Watch Demo</button></a></div>
             </div>
 
-
             <!-- Todoist Clone -->
 
-            <div class="col-lg-4 col-md-5 col-sm-8 text-center mb-5">
+            <div class="card ">
                 <img src="..\Images\Todoist_clone.PNG" style="width:100%;" alt="Todoist_Clone">
                 <div class="card-body">
                     <h5 class="card-title text-center">Todoist Clone</h5>
@@ -325,10 +328,10 @@
                                 class="fas fa-video"></i> Watch Demo</button></a></div>
             </div>
 
+            <!-- Food ordering System -->
 
-            <!-- Food Ordering System -->
 
-            <div class="col-lg-4 col-md-5 col-sm-8 text-center mb-5">
+            <div class="card ">
                 <img src="..\Images\Food_ordering.PNG" style="width:100%;" alt="Food_ordering">
                 <div class="card-body">
                     <h5 class="card-title text-center">FOOD ORDERING SYESTEM</h5>
@@ -348,9 +351,10 @@
                                 class="fas fa-video"></i> Watch Demo</button></a></div>
             </div>
 
-            <!-- Marks Recorder -->
 
-            <div class="col-lg-4 col-md-5 col-sm-8 text-center mb-5">
+            <!-- Marks recorder -->
+
+            <div class="card ">
                 <img src="..\Images\marks_recorder.PNG" style="width:100%;" alt="marks_recorder">
                 <div class="card-body">
                     <h5 class="card-title text-center">MARKS RECORDER</h5>
@@ -368,9 +372,11 @@
                                 class="fas fa-video"></i> Watch Demo</button></a></div>
             </div>
 
+
             <!-- User's Profile -->
 
-            <div class="col-lg-4 col-md-5 col-sm-8 text-center mb-5">
+
+            <div class="card">
                 <img src="..\Images\User_profile.PNG" style="width: 100%;   " alt="User_profile">
                 <div class="card-body">
                     <h5 class="card-title text-center">USER'S PROFILE</h5>
@@ -383,14 +389,22 @@
                         Ratings, Reviews with a contact us tab. </p>
                 </div>
                 <div class="text-center"> <a href=".\Projects\User_profile\profile.html"><button
-                            class="btn btn-outline-danger m-3"> <i class="fas fa-broadcast-tower"></i> Live
+                            class="btn btn-outline-danger m-3">
+                            <i class="fas fa-broadcast-tower"></i> Live
                             App</button></a><a href="..\UP_Demo.html"><button class="btn btn-outline-dark m-2"><i
                                 class="fas fa-video"></i> Watch Demo</button></a></div>
             </div>
 
-        </div>
 
+
+
+
+
+        </div>
     </div>
+
+    <div class="text-center py-3"><a href="">See All Projects</a></div>
+    <!--  -->
 
 
 
@@ -457,6 +471,30 @@
     </div>
 
     <!--Footer Area Ends-->
+
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+    </script>
     <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

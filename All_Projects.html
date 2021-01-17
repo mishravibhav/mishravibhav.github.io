@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Heebo&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body style="background: rgba(59, 130, 246, 0.5);">
+    <div>
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light"
+            style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);height: auto;position: relative;">
+
+            <button onclick="changeHeadingBg()" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarCollapseContent" aria-controls="#navbarCollapseContent" aria-expanded="false"
+                aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+                <a class="navbar-brand h1 " href="#">
+                    <span class="navbar-img">
+                        <div id="logo">
+                            <a href="#"><img src="..\Images\LOGO.png" /></a>
+                        </div>
+                    </span>
+                </a>
+            
+
+            <div class="collapse navbar-collapse bg-lg-light" id="navbarCollapseContent">
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light ml-2" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light ml-2" href="#About">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light ml-2" href="#Skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light ml-2" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ml-2" href="#commits">Commits</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+
+    <div>
+        <div class="text-center">
+            <h2 class=" text-dark pt-5">MY
+                <swap class="text-primary">PROJECTS</swap>
+            </h2>
+        </div>
+        <div class="container">
+
+            <!-- First Row -->
+            <div class=" py-5" id="projects">
+    
+                <!-- Expense Manager -->
+    
+                <div class="col-lg-4 col-md-5 col-sm-8  mb-5" id="project-card">
+                    <img src="..\Images\Expense_manager.PNG" style="width: 100%;   " alt="Expense_Manager">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Expense Manager</h5>
+                        <div class="my-3">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-success">CSS</span>
+                            <span class="badge badge-info">Bootstrap</span>
+                            <span class="badge badge-danger">Javascript</span>
+                            <span class="badge badge-primary">Local Storage</span>
+                        </div>
+                        <p class="card-text "> </p>
+                    </div>
+                    <div class="text-center"> <a href=".\Projects\Expence_manager\Signup.html"><button
+                                class="btn btn-outline-danger m-3"> <i class="fas fa-broadcast-tower"></i> Live
+                                App</button></a><a href="..\UP_Demo.html"><button class="btn btn-outline-dark m-2"><i
+                                    class="fas fa-video"></i> Watch Demo</button></a></div>
+                </div>
+    
+                <!-- Covid Tracker -->
+    
+                <div class="col-lg-4 col-md-5 col-sm-8  mb-5" id="project-card">
+                    <img src="..\Images\Covid_Tracker.PNG" style="width:100%;" alt="Covid_Tracker">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Covid Case Tracker</h5>
+                        <div class="my-3">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-success">CSS</span>
+                            <span class="badge badge-danger">Javascript</span>
+                            <span class="badge badge-primary">API</span>
+                        </div>
+                        <p class="card-text  pb-2"></p>
+                    </div>
+                    <div class="text-center"><a href=".\Projects\Covid project\index.html"><button
+                                class="btn btn-outline-danger m-2 "><i class="fas fa-broadcast-tower"></i> Live
+                                App</button></a><a href="..\MR_Demo.html"><button class="btn btn-outline-dark m-2"><i
+                                    class="fas fa-video"></i> Watch Demo</button></a></div>
+                </div>
+    
+    
+                <!-- Todoist Clone -->
+    
+                <div class="col-lg-4 col-md-5 col-sm-8  mb-5" id="project-card">
+                    <img src="..\Images\Todoist_clone.PNG" style="width:100%;" alt="Todoist_Clone">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Todoist Clone</h5>
+                        <div class="my-3">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-success">CSS</span>
+                            <span class="badge badge-info">Bootstrap</span>
+                            <span class="badge badge-danger">Javascript</span>
+                            <span class="badge badge-primary">Local Storage</span>
+                        </div>
+                        <p class="card-text  pb-4"></p>
+                    </div>
+                    <div class="text-center"><a href=".\Projects\Todoist\index.html"><button
+                                class="btn btn-outline-danger m-2"><i class="fas fa-broadcast-tower"></i> Live
+                                App</button></a><a href="..\FOS_Demo.html"><button class="btn btn-outline-dark m-2"><i
+                                    class="fas fa-video"></i> Watch Demo</button></a></div>
+                </div>
+    
+    
+                <!-- Food Ordering System -->
+    
+                <div class="col-lg-4 col-md-5 col-sm-8  mb-5" id="project-card">
+                    <img src="..\Images\Food_ordering.PNG" style="width:100%;" alt="Food_ordering">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">FOOD ORDERING SYESTEM</h5>
+                        <div class="my-3">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-success">CSS</span>
+                            <span class="badge badge-info">Bootstrap</span>
+                            <span class="badge badge-danger">Javascript</span>
+                            <span class="badge badge-primary">API</span>
+                        </div>
+                        <p class="card-text  pb-4">Login functionality is added using Reqres API. Users may select multiple
+                            dishes to there cart and Can order it. </p>
+                    </div>
+                    <div class="text-center"><a href=".\Projects\Food_ordering\index.html"><button
+                                class="btn btn-outline-danger m-2"><i class="fas fa-broadcast-tower"></i> Live
+                                App</button></a><a href="..\FOS_Demo.html"><button class="btn btn-outline-dark m-2"><i
+                                    class="fas fa-video"></i> Watch Demo</button></a></div>
+                </div>
+    
+                <!-- Marks Recorder -->
+    
+                <div class="col-lg-4 col-md-5 col-sm-8  mb-5" id="project-card">
+                    <img src="..\Images\marks_recorder.PNG" style="width:100%;" alt="marks_recorder">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">MARKS RECORDER</h5>
+                        <div class="my-3">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-success">CSS</span>
+                            <span class="badge badge-danger">Javascript</span>
+                        </div>
+                        <p class="card-text  pb-2"> It takes the details of the students and calculates total marks,
+                            Percentage and Grade of particular students.</p>
+                    </div>
+                    <div class="text-center"><a href=".\Projects\Marks_rec\index.html"><button
+                                class="btn btn-outline-danger m-2 "><i class="fas fa-broadcast-tower"></i> Live
+                                App</button></a><a href="..\MR_Demo.html"><button class="btn btn-outline-dark m-2"><i
+                                    class="fas fa-video"></i> Watch Demo</button></a></div>
+                </div>
+    
+                <!-- User's Profile -->
+    
+                <div class="col-lg-4 col-md-5 col-sm-8  mb-5" id="project-card">
+                    <img src="..\Images\User_profile.PNG" style="width: 100%;   " alt="User_profile">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">USER'S PROFILE</h5>
+                        <div class="my-3">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-success">CSS</span>
+                            <span class="badge badge-info">Bootstrap</span>
+                        </div>
+                        <p class="card-text "> It includes the information of particular User ie. personal information,
+                            Ratings, Reviews with a contact us tab. </p>
+                    </div>
+                    <div class="text-center"> <a href=".\Projects\User_profile\profile.html"><button
+                                class="btn btn-outline-danger m-3"> <i class="fas fa-broadcast-tower"></i> Live
+                                App</button></a><a href="..\UP_Demo.html"><button class="btn btn-outline-dark m-2"><i
+                                    class="fas fa-video"></i> Watch Demo</button></a></div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
