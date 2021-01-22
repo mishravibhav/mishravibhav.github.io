@@ -1,117 +1,267 @@
 window.onload = () => {
-    AllData()
     var form = document.querySelector('form')
     form.addEventListener('submit', FilterData)
-}
-
-function AllData() {
     var xhr = new XMLHttpRequest()
-    xhr.open('GET', ' https://api.covid19api.com/summary')
+    xhr.open("GET", "https://api.covid19api.com/summary")
     xhr.setRequestHeader('Content-Type', 'application/json', 'charset=utf-8')
     xhr.send()
     xhr.onload = () => {
-
-        var data = JSON.parse(xhr.response)
-        var display = document.getElementById('Display')
-
-        // console.log(data)
-
-        for (var i = 0; i < data.Countries.length; i++) {
-            var div = document.createElement('div')
-            var div1 = document.createElement('div')
-            var div2 = document.createElement('div')
-            var div3 = document.createElement('div')
-            var div4 = document.createElement('div')
-            var div5 = document.createElement('div')
-            var div6 = document.createElement('div')
-            div.append(data.Countries[i].Country)
-            div1.append(data.Countries[i].NewConfirmed)
-            div2.append(data.Countries[i].NewDeaths)
-            div2.style.color = 'red'
-            div3.append(data.Countries[i].NewRecovered)
-            div3.style.color = 'green'
-            div4.append(data.Countries[i].TotalConfirmed)
-            div5.append(data.Countries[i].TotalDeaths)
-            div5.style.color = 'red'
-            div6.append(data.Countries[i].TotalRecovered)
-            div6.style.color = 'green'
-            display.append(div, div1, div2, div3, div4, div5, div6)
-
-        }
-
-        var NC = document.getElementById('NC')
-        NC.innerHTML = (data.Global.NewConfirmed)
-
-        var ND = document.getElementById('ND')
-        ND.innerHTML = (data.Global.NewDeaths)
-
-        var NR = document.getElementById('NR')
-        NR.innerHTML = (data.Global.NewRecovered)
-
-        var TC = document.getElementById('TC')
-        TC.innerHTML = (data.Global.TotalConfirmed)
-
-        var TD = document.getElementById('TD')
-        TD.innerHTML = (data.Global.TotalDeaths)
-
-        var TR = document.getElementById('TR')
-        TR.innerHTML = (data.Global.TotalRecovered)
+        var data = (xhr.response)
+        FetchData(data)
+        GlobalChart(data)
+        IndiaChart(data)
     }
+
 }
 
 function FilterData() {
+
     event.preventDefault()
-
     var form = new FormData(event.target)
-    var payload = {}
-    payload.Country = form.get('country-Name')
+    var name = form.get("Selectbox")
+    // console.log(name)
 
-    // console.log(payload)
+    var display = document.getElementById('Display')
+    display.innerHTML = ""
+
+    var Countries =""
 
     var xhr = new XMLHttpRequest()
-    xhr.open('GET', ' https://api.covid19api.com/summary')
+    xhr.open("GET", "https://api.covid19api.com/summary")
     xhr.setRequestHeader('Content-Type', 'application/json', 'charset=utf-8')
     xhr.send()
     xhr.onload = () => {
-        var data2 = JSON.parse(xhr.response)
-        var Display_filter = document.getElementById('Display-filter-Data')
+        var data = (xhr.response)
+        var data2 = JSON.parse(data)
 
-        // console.log(data2)
-        Display_filter.innerHTML ='' 
-        for (var i = 0; i < data2.Countries.length; i++) {
+        Countries = data2.Countries
 
-            if (data2.Countries[i].Country === payload.Country) {
-
-                var div7 = document.createElement('div')
-                var div8 = document.createElement('div')
-
-                var div9 = document.createElement('div')
-                div9.style.color = 'red'
-
-                var div10 = document.createElement('div')
-                div10.style.color = 'green'
-
-                var div11 = document.createElement('div')
-
-                var div12 = document.createElement('div')
-                div12.style.color = 'red'
-
-                var div13 = document.createElement('div')
-                div13.style.color = 'green'
-
-                div7.append(data2.Countries[i].Country)
-                div8.append(data2.Countries[i].NewConfirmed)
-                div9.append(data2.Countries[i].NewDeaths)
-                div10.append(data2.Countries[i].NewRecovered)
-                div11.append(data2.Countries[i].TotalConfirmed)
-                div12.append(data2.Countries[i].TotalDeaths)
-                div13.append(data2.Countries[i].TotalRecovered)
-                Display_filter.append(div7, div8, div9, div10, div11, div12, div13)
-            }
-
+        if(name == "All"){
+            FetchData(data)
         }
-        document.querySelector('form').reset()
+
+       else{
+        var div1 = document.createElement('div')
+        div1.innerHTML = "Country"
+        div1.style.border = "1px solid black"
+        div1.style.backgroundColor = "DodgerBlue"
+        div1.style.color = "white"
+    
+        var div2 = document.createElement('div')
+        div2.innerHTML = "TotalConfirmed"
+        div2.style.border = "1px solid black"
+        div2.style.backgroundColor = "Tomato"
+        div2.style.color = "white"
+    
+        var div3 = document.createElement('div')
+        div3.innerHTML = "TotalRecovered"
+        div3.style.border = "1px solid black"
+        div3.style.backgroundColor = "green"
+        div3.style.color = "white"
+    
+        var div4 = document.createElement('div')
+        div4.innerHTML = "TotalDeaths"
+        div4.style.border = "1px solid black"
+        div4.style.backgroundColor = "Red"
+        div4.style.color = "white"
+    
+        var div5 = document.createElement('div')
+        div5.innerHTML = "NewConfirmed"
+        div5.style.border = "1px solid black"
+        div5.style.backgroundColor = "Tomato"
+        div5.style.color = "white"
+    
+    
+        display.append(div1, div2, div3, div4, div5)
+            
+    
+            for (var i = 0; i < Countries.length; i++) {
+                if (Countries[i].Country === name) {
+        
+                    // console.log(Countries)
+        
+                    var div1 = document.createElement('div')
+                    div1.innerHTML = Countries[i].Country
+                    div1.style.border = "1px solid black"
+        
+                    var div2 = document.createElement('div')
+                    div2.innerHTML = Countries[i].TotalConfirmed
+                    div2.style.border = "1px solid black"
+                    div2.style.color = "Orange"
+        
+                    var div3 = document.createElement('div')
+                    div3.innerHTML = Countries[i].TotalRecovered
+                    div3.style.border = "1px solid black"
+                    div3.style.color = "green"
+        
+                    var div4 = document.createElement('div')
+                    div4.innerHTML = Countries[i].TotalDeaths
+                    div4.style.border = "1px solid black"
+                    div4.style.color = "Red"
+        
+                    var div5 = document.createElement('div')
+                    div5.innerHTML = "+" + Countries[i].NewConfirmed
+                    div5.style.border = "1px solid black"
+                    div5.style.color = "Orange"
+        
+                    display.append(div1, div2, div3, div4, div5)
+        
+                }
+                
+            }
+            
+            
+        }
+    }
+
+
+}
+
+function FetchData(data) {
+    var data = JSON.parse(data)
+    // console.log(data)
+    var Countries = data.Countries
+
+    var Global_Newcnf = document.getElementById('Newcnf')
+    var Global_Newrecovered = document.getElementById('Newrecoveries')
+    var Global_Newdeath = document.getElementById('Newdeath')
+
+    Global_Newcnf.innerHTML = "+" + data.Global.NewConfirmed
+    Global_Newrecovered.innerHTML = "+" + data.Global.NewRecovered
+    Global_Newdeath.innerHTML = "+" + data.Global.NewDeaths
+
+    var selectbox = document.getElementById("Selectbox")
+    for (var i = 0; i < Countries.length; i++) {
+        var option = document.createElement('option')
+        option.value = Countries[i].Country
+        option.innerHTML = Countries[i].Country
+        selectbox.append(option)
+    }
+
+    var display = document.getElementById('Display')
+
+    var div1 = document.createElement('div')
+    div1.innerHTML = "Country"
+    div1.style.border = "1px solid black"
+    div1.style.backgroundColor = "DodgerBlue"
+    div1.style.color = "white"
+
+    var div2 = document.createElement('div')
+    div2.innerHTML = "TotalConfirmed"
+    div2.style.border = "1px solid black"
+    div2.style.backgroundColor = "Tomato"
+    div2.style.color = "white"
+
+    var div3 = document.createElement('div')
+    div3.innerHTML = "TotalRecovered"
+    div3.style.border = "1px solid black"
+    div3.style.backgroundColor = "green"
+    div3.style.color = "white"
+
+    var div4 = document.createElement('div')
+    div4.innerHTML = "TotalDeaths"
+    div4.style.border = "1px solid black"
+    div4.style.backgroundColor = "Red"
+    div4.style.color = "white"
+
+    var div5 = document.createElement('div')
+    div5.innerHTML = "NewConfirmed"
+    div5.style.border = "1px solid black"
+    div5.style.backgroundColor = "Tomato"
+    div5.style.color = "white"
+
+    display.append(div1, div2, div3, div4, div5)
+
+    for (var i = 0; i < Countries.length; i++) {
+        var div1 = document.createElement('div')
+        div1.innerHTML = Countries[i].Country
+        div1.style.border = "1px solid black"
+
+        var div2 = document.createElement('div')
+        div2.innerHTML = Countries[i].TotalConfirmed
+        div2.style.border = "1px solid black"
+        div2.style.color = "Orange"
+
+        var div3 = document.createElement('div')
+        div3.innerHTML = Countries[i].TotalRecovered
+        div3.style.border = "1px solid black"
+        div3.style.color = "green"
+
+        var div4 = document.createElement('div')
+        div4.innerHTML = Countries[i].TotalDeaths
+        div4.style.border = "1px solid black"
+        div4.style.color = "Red"
+
+        var div5 = document.createElement('div')
+        div5.innerHTML = "+" + Countries[i].NewConfirmed
+        div5.style.border = "1px solid black"
+        div5.style.color = "Orange"
+
+        display.append(div1, div2, div3, div4, div5)
     }
 
 }
 
+function IndiaChart(data) {
+
+    var data = JSON.parse(data)
+    var Countries = data.Countries
+    // console.log(Countries)
+
+    for (var i = 0; i < Countries.length; i++) {
+        if (Countries[i].CountryCode == "IN") {
+            var Recovered = data.Countries[i].TotalRecovered
+            var Case = data.Countries[i].TotalConfirmed
+            var Deaths = data.Countries[i].TotalDeaths
+        }
+    }
+
+    var ctx = document.getElementById('India').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Recovered', 'Cases', 'Deaths'],
+            datasets: [{
+                data: [Recovered, Case, Deaths],
+                backgroundColor: [
+                    'rgb(0, 255, 0)',
+                    'rgb(255, 204, 0)',
+                    'rgb(255, 0, 0)'
+                ],
+                borderWidth: 1
+            }]
+        },
+    });
+
+
+}
+
+function GlobalChart(data) {
+
+    var data = JSON.parse(data)
+
+    var Recovered = data.Global.TotalRecovered
+    var Case = data.Global.TotalConfirmed
+    var Deaths = data.Global.TotalDeaths
+
+    // console.log(Recovered, Case, Deaths)
+
+
+
+    var ctx = document.getElementById('Global').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Recovered', 'Cases', 'Deaths'],
+            datasets: [{
+                data: [Recovered, Case, Deaths],
+                backgroundColor: [
+                    'rgb(0, 255, 0)',
+                    'rgb(255, 204, 0)',
+                    'rgb(255, 0, 0)'
+                ],
+                borderWidth: 1
+            }]
+        }
+    });
+}
