@@ -56,7 +56,7 @@ function handleRegister(){
             setTimeout(()=>{ 
                 document.querySelector("form").reset()
                 alert("Registered successfully. Click OK to Login")
-                window.location.href = "signIn.html"
+                window.location.href = "signin.html"
              }, 1000)
 
             
