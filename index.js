@@ -58,7 +58,7 @@ var skill_json = [
 
 var projects_json = [
   {
-    img_src: ".\Images\Devjobs.PNG",
+    img_src: "https://mishravibhav.github.io/Images/Todoist_clone.PNG",
     header: "DEVJOBS CLONE",
     tags: [
       { class: "badge badge-primary", name: "Reactjs" },{ class: "badge badge-success", name: "Theme Toggle" },{ class: "badge badge-danger", name: "Responsive UI" },{ class: "badge badge-primary", name: "API" }
@@ -112,4 +112,59 @@ var createSkillboard = () => {
 
 const projectCardhandler = ()=>{
   console.log(projects_json)
+
+  // var project_courosel_div = document.querySelector("#project_courosel")
+  // var card_div =document.createElement('div')
+  // card_div.className="card"
+
+  // for(var i=0 ; i<projects_json.length; i++){
+  //   var project_img = document.createElement('img')
+  //   project_img.src=projects_json[i].img_src
+  //   project_img.style.width="100%"
+  //   project_img.style.height="10%"
+
+  //   var card_body_div = document.createElement('div')
+  //   card_body_div.className="card-body"
+
+  //   var header = document.createElement('h5')
+  //   header.className="card-title text-center"
+  //   header.innerHTML=projects_json[i].header
+  //   card_body_div.append(header)
+
+  //   var tags_div = document.createElement('div')
+  //   tags_div.className="my-3"
+
+  //   for(var j=0;j<projects_json[i].tags.length; j++){
+  //     var span = document.createElement('span')
+  //     span.className=projects_json[i].tags[j].class
+  //     span.innerHTML=projects_json[i].tags[j].name
+  //     tags_div.append(span)
+  //   }
+
+  //   var para = document.createElement('p')
+  //   para.className="card-text  pb-2"
+  //   para.innerHTML = projects_json[i].discription
+
+
+  //   var bottom_button_div = document.createElement('div')
+  //   bottom_button_div.className="text-center"
+  //   var bottom_button_a = document.createElement('a')
+  //   bottom_button_a.href=""
+
+  //   var live_app_button = document.createElement('button')
+  //   live_app_button.className="btn btn-outline-danger m-2"
+  //   var live_app_button_icon = document.createElement('i')
+  //   live_app_button_icon.className="fas fa-broadcast-tower"
+    
+
+    
+  //   live_app_button.append(live_app_button_icon,"Live App")
+  //   bottom_button_a.append(live_app_button)
+  //   bottom_button_div.append(live_app_button)
+
+
+  //   card_body_div.append(header,tags_div,para,bottom_button_div)
+  //   card_div.append(project_img,card_body_div)
+  //   project_courosel_div.append(card_div)
+  // }
 }
