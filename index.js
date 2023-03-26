@@ -1,3 +1,27 @@
+if('serviceWorker' in navigator){
+  console.log("borwser supports sw")
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('./sw.js').then((e)=>console.log('service worker : Registered'))
+    .catch((err)=>console.log(`service worker : ERROR : ${err}`))
+})
+}
+
+Notification.requestPermission(status=>{
+  console.log("Notification Permission status :",status)
+})
+
+// window.addEventListener('scroll',()=>{
+// if(Notification.permission == "granted"){
+//   console.log(Notification.permission)
+//     Navigator.serviceWorker.getRegistration('http://127.0.0.1:5500/')
+//     .then(reg=>{
+//       console.log(reg)
+//       reg.showNotification("HI This is vibhav")
+//     })
+//   }
+// })
+  
+
 var skill_json = [
   {
     "img_src": "https://img.icons8.com/ultraviolet/2x/react.png",
