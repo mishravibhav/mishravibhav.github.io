@@ -346,6 +346,11 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
+
+#form-res{
+    display: none;
+}
+
 @media only screen and (max-width:600px){
 
     #header{

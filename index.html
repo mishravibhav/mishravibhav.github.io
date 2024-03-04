@@ -28,7 +28,7 @@
                 <!-- <p>Full Stack Developer</p> -->
                 <h1>Hi, I'm <span>Vibhav Mishra</span> <br> a fullstack developer<br> from India</h1>
                 <div>
-                    <a type="submit" class="btn btn2" href="#contact">Cantact Me</a>
+                    <a type="submit" class="btn btn2" href="#contact">Contact Me</a>
                 </div>
             </div>
 
@@ -178,12 +178,13 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea type="message" name="message" row="6" placeholder="Your message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <p id="form-res">message</p>
                 </div>
             </div>
         </div>
@@ -215,6 +216,26 @@
         function closeMenu(){
             sidemenu.style.right ="-200px"
         }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyBTT7LXSr9mkcrJQ6bK6zU3gVdVV390dhedQ6S1NsImX_aaLUVf7L8zOIy39n8MkKUEQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+          const res = document.getElementById("form-res")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    console.log('Success!', response)
+                    res.innerHTML = `Success: response captured successfully. I'll reachout to you soon`
+                    res.style.color = "green"
+                    res.style.display = "block"
+                })
+                .catch(error => {
+                    console.error('Error!', error.message)
+                    res.innerHTML = `Error: Something went wrong`
+                    res.style.color = "red"
+                    res.style.display = "block"
+                })
+            })
     </script>
 </body>
 </html>
