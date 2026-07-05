@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1b54431333.js" crossorigin="anonymous"></script>
+    <script>
+        if ('IntersectionObserver' in window) {
+            document.documentElement.classList.add('reveal-ready')
+        }
+    </script>
 
 
     <!-- Google Tag Manager -->
@@ -307,37 +312,43 @@
         }
         document.querySelectorAll("#sidemenu a").forEach(a => a.addEventListener("click", closeMenu))
 
+        if ('IntersectionObserver' in window) {
+            const revealEls = document.querySelectorAll('[data-reveal]')
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view')
+                        observer.unobserve(entry.target)
+                    }
+                })
+            }, { threshold: 0.15 })
+            revealEls.forEach(el => observer.observe(el))
+            // safety net: guarantee visibility even if an observer callback never fires
+            setTimeout(() => revealEls.forEach(el => el.classList.add('in-view')), 4000)
+        }
+
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyBTT7LXSr9mkcrJQ6bK6zU3gVdVV390dhedQ6S1NsImX_aaLUVf7L8zOIy39n8MkKUEQ/exec'
         const form = document.forms['submit-to-google-sheet']
         const res = document.getElementById("form-res")
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    res.innerHTML = `Message sent — I'll reach out to you soon.`
-                    res.classList.add("success")
-                    res.classList.remove("error")
-                    res.style.display = "block"
-                    form.reset()
-                })
-                .catch(error => {
-                    res.innerHTML = `Something went wrong. Try WhatsApp instead.`
-                    res.classList.add("error")
-                    res.classList.remove("success")
-                    res.style.display = "block"
-                })
-        })
-
-        const revealEls = document.querySelectorAll('[data-reveal]')
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('in-view')
-                    observer.unobserve(entry.target)
-                }
+        if (form) {
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        res.innerHTML = `Message sent — I'll reach out to you soon.`
+                        res.classList.add("success")
+                        res.classList.remove("error")
+                        res.style.display = "block"
+                        form.reset()
+                    })
+                    .catch(error => {
+                        res.innerHTML = `Something went wrong. Try WhatsApp instead.`
+                        res.classList.add("error")
+                        res.classList.remove("success")
+                        res.style.display = "block"
+                    })
             })
-        }, { threshold: 0.15 })
-        revealEls.forEach(el => observer.observe(el))
+        }
     </script>
 </body>
 </html>
