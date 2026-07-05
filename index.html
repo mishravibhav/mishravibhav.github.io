@@ -4,238 +4,340 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibhav's Portfolio</title>
+    <meta name="description" content="Vibhav Mishra — Forward Deployed Engineer specialising in MarTech data pipelines, CDP/ESP/WSP/SSP integrations, and cloud infrastructure.">
+    <title>Vibhav Mishra — Forward Deployed Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1b54431333.js" crossorigin="anonymous"></script>
-</head>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NKLPC3BJ');</script>
+    <!-- End Google Tag Manager -->
+    </head>
 <body>
-    <div id="headers">
+
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKLPC3BJ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+    <a href="https://wa.me/917542081827?text=Hi%20Vibhav%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20connect!" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <header id="header">
         <div class="container">
             <nav>
-                <img src="./LOGO.png" class="logo">
+                <a href="#header" class="logo">Vibhav<span>.</span></a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#impact">Impact</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <div class="nav-actions">
+                    <a href="https://wa.me/917542081827?text=Hi%20Vibhav%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20connect!" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </div>
             </nav>
 
             <div class="header-text">
-                <!-- <p>Full Stack Developer</p> -->
-                <h1>Hi, I'm <span>Vibhav Mishra</span> <br> a fullstack developer<br> from India</h1>
-                <div>
-                    <a type="submit" class="btn btn2" href="#contact">Contact Me</a>
+                <p class="eyebrow">Forward Deployed Engineer &middot; Full Stack &middot; Cloud Infrastructure</p>
+                <h1>Hi, I'm <span>Vibhav Mishra</span>.<br>I build the data pipelines<br>behind enterprise MarTech.</h1>
+                <p class="header-sub">5+ years architecting CDP/ESP/WSP/SSP integrations and event pipelines at scale — for clients like Unilever, Transunion CIBIL, and Adani.</p>
+                <div class="cta-row">
+                    <a href="https://wa.me/917542081827?text=Hi%20Vibhav%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20connect!" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <a href="./Vibhav_Mishra_Resume_FDE.pdf" download class="btn btn-outline">
+                        Download Resume <i class="fa-solid fa-download"></i>
+                    </a>
                 </div>
             </div>
 
+            <div class="stats-strip">
+                <div class="stat">
+                    <h3>5+</h3>
+                    <p>Years experience</p>
+                </div>
+                <div class="stat">
+                    <h3>8&ndash;10M+</h3>
+                    <p>Events processed / day</p>
+                </div>
+                <div class="stat">
+                    <h3>25K+</h3>
+                    <p>API requests / min</p>
+                </div>
+                <div class="stat">
+                    <h3>30%</h3>
+                    <p>Cloud cost reduction</p>
+                </div>
+            </div>
         </div>
+    </header>
 
-        
-    </div>
-    <div id="about">
+    <section id="about">
         <div class="container">
             <div class="row">
-                <div class="about-column-1">
-                    <img src="./prof_new_img.png" alt="" srcset="">
+                <div class="about-column-1" data-reveal>
+                    <img src="./prof_new_img.png" alt="Vibhav Mishra">
                 </div>
-                <div class="about-column-2">
-                    <h1 class="sub-title">
-                        About Me
-                    </h1>
+                <div class="about-column-2" data-reveal>
+                    <h1 class="sub-title">About Me</h1>
                     <p>
-                        Experienced Full Stack Developer with 3+ years of diverse experience. Skilled in a wide range of technologies and frameworks, with a strong work ethic and a passion for creative problem-solving.
+                        I'm a senior engineer specialising in marketing technology, data pipelines, and
+                        CDP/ESP/WSP/SSP integrations at scale. I've built and maintained event relay pipelines
+                        handling <strong>8&ndash;10M+ events/day</strong> and APIs serving <strong>25,000+ req/min</strong>
+                        across enterprise e-commerce and marketplace clients including Unilever, Transunion CIBIL,
+                        and Adani. Comfortable owning the full lifecycle — from architecture to delivery to
+                        incident response — in fast-moving, cross-functional environments.
                     </p>
 
-                    <div class="tab-titles">
-                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
-                        <div class="tab-links " onclick="opentab('experience')">Experience</div>
-                        <div class="tab-links " onclick="opentab('education')">Education</div>
+                    <div class="quick-facts">
+                        <div><i class="fa-solid fa-location-dot"></i> Gurgaon, Haryana, India</div>
+                        <div><i class="fa-solid fa-briefcase"></i> Data Engineer @ WebEngage</div>
+                        <div><i class="fa-solid fa-envelope"></i> vibhavmishraofficial@gmail.com</div>
+                        <div><i class="fa-brands fa-whatsapp"></i> +91 75420 81827</div>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Backend  </span><br>Nodejs, Expressjs, Javascript</li>
-                            <li><span>Frontend </span><br>React, Redux, html, css, javascript</li>
-                            <li><span>Devops </span><br>Docker, AWS, GCP </li>
-                            <li><span>Database </span><br>Mysql, Mongodb, dynamodb, bigquery </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents " id="experience">
-                        <ul>
-                            <li><span>Senior Solutions Engineer @webengage |  05/2021 to present </span><br>
-                                <li>• Work on design and development of new products iteratively by building quick POCs for new product integration.</li>
-                                <li>• Interact with both business and technical stakeholders to deliver high quality products and services that meet business requirements and expectations while applying the latest available tools and technology.</li>
-                                <li>• Designed and developed an event relay pipeline using AWS Lambda and Amazon SQS, significantly enhancing data reliability by managing consumer rate limits, ensuring robust retries, and preventing data loss.</li>
-                                <li>• Developed a robust CMDB Dashboard backend, implemented Role-Based Access Control (RBAC) and REST APIs, resulting in Manging infra cost, deployments,modules, resources and services used in a feature at one place.</li>
-                            </li>
-                            <li><span>Solutions Engineer @webengage |  05/2021 to 03/2023  </span><br>
-                                <li>• Developed and maintaining a backend pipeline which is handling 30+ Integration for different clients for seamless data transfer between Customer Relationship Management Systems (CRMS), data warehouses, and webengage, ensuring efficient data flow and integrity.</li>
-                                <li>• Integrated ESP,WSP and SSP with webEngage using AWS Lambda which is handling millions of messages sent through webengage everyday.</li>
-                                <li>• Integrated platforms like zendesk, JIRA, rocketlane etc. with our internal systems for data sharing.</li>
-                                <li>• Worked on nunjucks (a JavaScript-based templating language) for content personalisation.</li>
-                                <li>• Converted over 200+ Photoshop Document Designs into Mobile Responsive Surveys, Notifications etc. using HTML, CSS and JavaScript.</li>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Vector Program, LevelUp by Masai School </span><br>
-                                <li>• Data Structures & Algorithms, Backend design principles.</li>
-                                <li>• System Design, systems building, cloud services, and big data exploration. Technology and Business Understanding</li>
-                            </li>
-                            <li><span>B.Tech - Mechanical Engineering, MCKV Institute Of Engineering |  08/2016 to 06/2020</span><br>
-                            </li>
-                        </ul>
+
+                    <div class="cta-row">
+                        <a href="https://wa.me/917542081827?text=Hi%20Vibhav%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20connect!" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Message me on WhatsApp
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="services">
+    </section>
+
+    <section id="experience">
         <div class="container">
-            <h1 class="sub-title">
-                My Services
-            </h1>
-            <div class="services-list">
-                <div>
+            <h1 class="sub-title">Experience</h1>
+            <p class="section-sub">5+ years at WebEngage, growing from integration engineering into owning enterprise data architecture end to end.</p>
+
+            <div class="timeline">
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2025 &ndash; Present</span>
+                        <h3>Data Engineer <span>&middot; WebEngage</span></h3>
+                        <ul>
+                            <li>Architecting data pipelines processing <strong>8&ndash;10M+ events/day</strong> across AWS + GCP with sub-second ingestion latency.</li>
+                            <li>Drove a <strong>30% cloud cost reduction</strong> by migrating high-frequency workloads from AWS Lambda to EC2, eliminating cold-start issues.</li>
+                            <li>Designing end-to-end real-time and batch data architecture integrating CDPs and data lakes with zero data loss guarantees.</li>
+                            <li>Leading incident response and root-cause analysis for data integrity issues across distributed systems.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2023 &ndash; Mar 2025</span>
+                        <h3>Senior Software Engineer <span>&middot; Interim Engineering Lead, WebEngage</span></h3>
+                        <ul>
+                            <li>Designed and delivered a <strong>Shopify &rarr; WebEngage</strong> bi-directional sync pipeline powering personalised email, SMS, and push campaigns.</li>
+                            <li>Built <strong>product feed pipelines</strong> for advertising platforms — analogous to Google Merchant Center / Meta Catalog — with automated refresh and error alerting.</li>
+                            <li>Led <strong>CDP onboarding</strong> for enterprise clients: identity graph mapping, event schema alignment, and audience segmentation.</li>
+                            <li>Implemented GTM-based server-side tag deployment, cutting integration go-live from weeks to days.</li>
+                            <li>Built an event relay pipeline (Lambda + SQS) with fault-tolerant retries, improving data delivery reliability by <strong>35%</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun 2021 &ndash; Mar 2023</span>
+                        <h3>Software Engineer <span>&middot; WebEngage</span></h3>
+                        <ul>
+                            <li>Built an in-house ETL platform (Node.js + Express) managing <strong>30+ integration pipelines</strong> for Unilever, L'Or&eacute;al, and Adani.</li>
+                            <li>Developed Python scripts for bulk transformation and historical backfills, hydrating CDP profiles for millions of user records during client migrations.</li>
+                            <li>Built microservices integrating Zendesk, JIRA, and Rocketlane via Node.js and AWS Lambda.</li>
+                            <li>Maintained ESP/WSP/SSP dispatch systems supporting millions of daily push, email, and in-app interactions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-dot timeline-dot-muted"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2016 &ndash; 2020</span>
+                        <h3>B.Tech, Computer Science <span>&middot; MAKAUT, West Bengal</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <p class="section-sub">The stack I use to move data reliably from source systems into the platforms that run marketing at scale.</p>
+            <div class="skills-grid">
+                <div class="skill-card" data-reveal>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Frontend</h2>
-                <p>I am an accomplished software engineer with a demonstrated proficiency in developing resilient backend systems. With a proven track record of delivering superior solutions across diverse projects, I specialize in designing scalable and efficient backend architectures tailored to meet the demands of modern applications.
-                </p>
-                <a href=""> learn more</a>
+                    <h3>Languages</h3>
+                    <p>Python (pandas, boto3) &middot; Node.js &middot; JavaScript &middot; TypeScript &middot; SQL</p>
                 </div>
-                <div>
+                <div class="skill-card" data-reveal>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>MarTech &amp; CDP</h3>
+                    <p>CDP Integrations &middot; GTM &amp; Server-Side Tagging &middot; Web SDK Deployment &middot; ESP/CRM Integrations &middot; Audience Segmentation &middot; Shopify Data Sync</p>
+                </div>
+                <div class="skill-card" data-reveal>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Advertising Platforms</h3>
+                    <p>Product Feed Management (Merchant Center / Meta Catalog analogs) &middot; Dynamic Product Ads &middot; Catalog Sync &middot; Paid Media Data Flows</p>
+                </div>
+                <div class="skill-card" data-reveal>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>Cloud &amp; Infra</h3>
+                    <p>AWS (EC2, Lambda, SQS, S3) &middot; GCP (BigQuery, Pub/Sub) &middot; Docker &middot; Kubernetes</p>
+                </div>
+                <div class="skill-card" data-reveal>
                     <i class="fa-solid fa-layer-group"></i>
-                    <h2>Backend</h2>
-                <p>I am a skilled frontend developer with a passion for creating intuitive and visually appealing user interfaces. With a keen eye for design and a strong understanding of web technologies, I specialize in delivering engaging frontend solutions that enhance the overall user experience. My expertise lies in creating responsive and interactive interfaces that meet the needs of modern web applications.</p>
-                <a href="">learn more</a>
+                    <h3>Backend</h3>
+                    <p>Express.js &middot; REST APIs &middot; Microservices &middot; Event-Driven Architecture &middot; Webhooks</p>
                 </div>
-                <div>
+                <div class="skill-card" data-reveal>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Observability</h3>
+                    <p>AWS CloudWatch &middot; Grafana Loki &middot; Log Aggregation &middot; Distributed Tracing</p>
+                </div>
+                <div class="skill-card" data-reveal>
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Data</h3>
+                    <p>MongoDB &middot; MySQL &middot; BigQuery &middot; ETL/ELT Pipelines &middot; Event Schema Design &middot; Data Quality Governance</p>
+                </div>
+                <div class="skill-card" data-reveal>
                     <i class="fa-solid fa-handshake"></i>
-                    <h2>Integration</h2>
-                <p>I have extensive experience in integrating platforms and SDKs for various clients including Adani, unilever and Loreal. My work involves seamlessly integrating different systems and software development kits to enhance the functionality and usability of their applications.</p>
-                <a href="">learn more </a>
+                    <h3>Client-Facing</h3>
+                    <p>Enterprise Onboarding &middot; POC Development &middot; Cross-functional Stakeholder Delivery &middot; Demo Engineering</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="portfolio">
+    </section>
+
+    <section id="impact">
         <div class="container">
-            <h1 class="sub-title">
-                My Works
-            </h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./work-1.png">
-                    <div class="layer">
-                        <h3>Linkdin Clone</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
+            <h1 class="sub-title">Impact</h1>
+            <p class="section-sub">Numbers from production systems I've architected and shipped.</p>
+            <div class="impact-grid">
+                <div class="impact-card" data-reveal>
+                    <h2>8&ndash;10M+</h2>
+                    <p>Events processed per day across real-time and batch pipelines on AWS &amp; GCP</p>
                 </div>
-                <div class="work">
-                    <img src="./work-2.png">
-                    <div class="layer">
-                        <h3>Food orderind app</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
+                <div class="impact-card" data-reveal>
+                    <h2>25,000+</h2>
+                    <p>API requests per minute sustained across enterprise client pipelines</p>
                 </div>
-                <div class="work">
-                    <img src="./work-3.png">
-                    <div class="layer">
-                        <h3>Online shoping app</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
+                <div class="impact-card" data-reveal>
+                    <h2>30%</h2>
+                    <p>Cloud cost reduction from migrating high-frequency workloads off Lambda</p>
+                </div>
+                <div class="impact-card" data-reveal>
+                    <h2>35%</h2>
+                    <p>Improvement in data delivery reliability via fault-tolerant retry &amp; DLQ design</p>
                 </div>
             </div>
-            <div class="btn">
-                <a href="#">see more</a>
-            </div>
+            <p class="clients-line">Trusted to build integrations for teams at &middot; <strong>Unilever</strong> &middot; <strong>Transunion CIBIL</strong> &middot; <strong>Adani</strong> &middot; <strong>L'Or&eacute;al</strong></p>
         </div>
-    </div>
-    <div id="contact">
+    </section>
+
+    <section id="contact">
         <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">
-                        Contact Me
-                    </h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> vibhavmishra0703@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +917542081827</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/mishravibhav"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/vibhav-mishra-91625a170/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://medium.com/@mishravibhav"><i class="fa-brands fa-medium"></i></a>
-                        <a href="https://wa.me/7542081827"><i class="fa-brands fa-whatsapp"></i></a>
+            <div class="contact-card" data-reveal>
+                <h1 class="sub-title">Let's Talk</h1>
+                <p class="section-sub">Fastest way to reach me is WhatsApp — I usually reply within the day.</p>
+                <a href="https://wa.me/917542081827?text=Hi%20Vibhav%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20connect!" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+                    <i class="fa-brands fa-whatsapp"></i> Chat with me on WhatsApp
+                </a>
+
+                <div class="row contact-row">
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-paper-plane"></i> vibhavmishraofficial@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 75420 81827</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/mishravibhav" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/vibhav-mishra-91625a170/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://medium.com/@mishravibhav" target="_blank" rel="noopener" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+                            <a href="https://wa.me/917542081827" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <div>
+                            <a href="./Vibhav_Mishra_Resume_FDE.pdf" download class="btn btn-outline">Download CV <i class="fa-solid fa-download"></i></a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="./vibhav's_resume_3+YOE.pdf" class="btn btn2">Download CV <i class="fa-solid fa-download"></i></a>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="5" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn-outline">Send Message</button>
+                        </form>
+                        <p id="form-res">message</p>
                     </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea type="message" name="message" row="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <p id="form-res" style="display: none;">message</p>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>
-                © 2024 All Rights Reserved By Vibhav Mishra
-            </p>
+            <p>&copy; 2026 Vibhav Mishra. All rights reserved.</p>
         </div>
-    </div>
+    </section>
+
     <script>
-        var tabLinks=document.getElementsByClassName("tab-links")
-        var tabContents=document.getElementsByClassName("tab-contents")
-
-        function opentab(tabname){
-            for(tablink of tabLinks){
-                tablink.classList.remove("active-link")
-            }
-            for(tabcontent of tabContents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-
         var sidemenu = document.getElementById("sidemenu")
         function openMenu(){
-            sidemenu.style.right ="0"
+            sidemenu.classList.add("open")
         }
         function closeMenu(){
-            sidemenu.style.right ="-200px"
+            sidemenu.classList.remove("open")
         }
+        document.querySelectorAll("#sidemenu a").forEach(a => a.addEventListener("click", closeMenu))
 
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyBTT7LXSr9mkcrJQ6bK6zU3gVdVV390dhedQ6S1NsImX_aaLUVf7L8zOIy39n8MkKUEQ/exec'
-            const form = document.forms['submit-to-google-sheet']
-          const res = document.getElementById("form-res")
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        const form = document.forms['submit-to-google-sheet']
+        const res = document.getElementById("form-res")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
-                    console.log('Success!', response)
-                    res.innerHTML = `Success: response captured successfully. I'll reachout to you soon`
-                    res.style.color = "green"
+                    res.innerHTML = `Message sent — I'll reach out to you soon.`
+                    res.classList.add("success")
+                    res.classList.remove("error")
                     res.style.display = "block"
+                    form.reset()
                 })
                 .catch(error => {
-                    console.error('Error!', error.message)
-                    res.innerHTML = `Error: Something went wrong`
-                    res.style.color = "red"
+                    res.innerHTML = `Something went wrong. Try WhatsApp instead.`
+                    res.classList.add("error")
+                    res.classList.remove("success")
                     res.style.display = "block"
                 })
+        })
+
+        const revealEls = document.querySelectorAll('[data-reveal]')
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view')
+                    observer.unobserve(entry.target)
+                }
             })
+        }, { threshold: 0.15 })
+        revealEls.forEach(el => observer.observe(el))
     </script>
 </body>
 </html>
